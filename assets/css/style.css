@@ -62,6 +62,44 @@ a {
     line-height: 1.67;
 }
 
+/* control btn */
+.control {
+    display: flex;
+    column-gap: 18px;
+    align-items: center;
+}
+
+.control__btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #575F66;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+}
+
+.control__btn:hover {
+    background: #2E80CE;
+    border-color: #2E80CE;
+    color: #fff;
+}
+
+.control-icon--next {
+    rotate: 180deg;
+}
+
 /* =============== header ===================== */
 .header {
     padding-top: 30px;
@@ -405,4 +443,75 @@ a {
 
 .about-content__btn {
     margin-top: 38px;
+}
+
+/* =============== team ===================== */
+.team {
+    padding: 85px 0;
+}
+
+.team-header {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.team__cta {
+    margin-top: 38px;
+}
+
+.team__list {
+    margin-top: 70px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.team-item__thumb {
+    max-width: 100%;
+    height: 290px;
+    border-radius: 6px;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.team-item__img-bg {
+    padding-top: 28px;
+    border-radius: 6px;
+    background: #EAF6FF;
+    overflow: hidden;
+}
+
+.team-item__name {
+    margin-top: 12px;
+    color: #10375C;
+    text-align: center;
+    font-style: normal;
+    line-height: 1.75;
+}
+
+.team-item__desc {
+    color: #575F66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85;
+}
+
+.team-item:hover .team-item__thumb {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+
+}
+
+.team__control {
+    margin-top: 38px;
+    justify-content: center;
 }
